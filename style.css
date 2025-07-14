@@ -18,12 +18,27 @@ h2 {
 a {
   color: #2980b9;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #1abc9c;
   text-decoration: underline;
 }
-
 ul {
   list-style-type: square;
+}
+
+ul li {
+  transition: transform 0.2s ease;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  color: #1abc9c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
